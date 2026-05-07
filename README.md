@@ -1,4 +1,4 @@
-# AQHBAR Academy V3 Website
+# AQHBAR Academy Website
 
 Premium static website for AQHBAR Academy — designed as a Quran restart experience for adults, professionals, families and corporate learners.
 
