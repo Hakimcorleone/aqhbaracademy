@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AQHBAR Academy | Daftar Kelas</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home"><span>A</span> AQHBAR Academy</a>
+    <nav>
+      <a href="#program">Program</a>
+      <a href="#form">Daftar</a>
+      <a href="tadabbur.html">Tadabbur</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-copy">
+        <p class="eyebrow">Struktur ayat santai</p>
+        <h1>Nak mula belajar Quran tapi tak tahu nak mula dari mana?</h1>
+        <p>AQHBAR Academy bantu anda pilih kelas yang sesuai ikut tahap bacaan dan kesesuaian anda.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#form">Wasap Sekarang</a>
+          <a class="btn secondary" href="#program">Lihat Kelas</a>
+        </div>
+        <p class="button-note">akan diadakan sesi interview khusus untuk tentukan bacaan anda</p>
+      </div>
+      <div class="hero-card">
+        <p class="card-kicker">Tahsin Bacaan Surah Al-Fatihah</p>
+        <h2>Betulkan bacaan Al-Fatihah anda dahulu.</h2>
+        <p>Mulakan dengan sesi semakan supaya team AQHBAR boleh tentukan kelas yang sesuai untuk anda.</p>
+      </div>
+    </section>
+
+    <section class="section intro">
+      <p class="eyebrow">Apa yang AQHBAR bantu</p>
+      <h2>Belajar secara santai ikut tahap anda.</h2>
+      <div class="pill-grid">
+        <span>Tahsin Bacaan Surah Al-Fatihah</span>
+        <span>Bacaan dalam solat</span>
+        <span>Kelas mengaji</span>
+        <span>Hafazan surah pilihan</span>
+        <span>Hadith pilihan</span>
+        <span>Sirah Nabi</span>
+        <span>Fardu Ain</span>
+        <span>Kelas custom</span>
+      </div>
+    </section>
+
+    <section id="program" class="section">
+      <p class="eyebrow">Pilih kelas</p>
+      <h2>Daftar kelas yang sesuai untuk anda.</h2>
+      <div class="product-grid">
+        <article class="product-card highlight">
+          <span class="product-number">01</span>
+          <h3>Daftar Kelas Sesi Percuma</h3>
+          <p class="free-tag">Percuma — Betulkan bacaan Al-Fatihah</p>
+          <p>Booking sesi percuma untuk semak dan betulkan bacaan Al-Fatihah.</p>
+          <a class="btn small" href="#form">Daftar Kelas Sesi Percuma</a>
+        </article>
+
+        <article class="product-card">
+          <span class="product-number">02</span>
+          <h3>Daftar Kelas Tadabbur Bulanan</h3>
+          <p>Percuma satu sesi 45 minit untuk Tahsin Al-Fatihah dan bacaan dalam solat.</p>
+          <a class="btn small" href="tadabbur.html">Daftar Kelas Tadabbur Bulanan</a>
+        </article>
+
+        <article class="product-card">
+          <span class="product-number">03</span>
+          <h3>Daftar Kelas Mengaji</h3>
+          <p>Termasuk sesi hafazan. Ada option berkumpulan dan individu.</p>
+          <ul>
+            <li>Hafazan surah pilihan</li>
+            <li>Hadith pilihan</li>
+            <li>Sirah Nabi</li>
+          </ul>
+          <a class="btn small" href="#form">Daftar Kelas Mengaji</a>
+        </article>
+
+        <article class="product-card">
+          <span class="product-number">04</span>
+          <h3>Daftar Kelas Fardu Ain</h3>
+          <p>Belajar mengenai Fardu Ain mengikut kesesuaian anda.</p>
+          <a class="btn small" href="#form">Daftar Kelas Fardu Ain</a>
+        </article>
+
+        <article class="product-card">
+          <span class="product-number">05</span>
+          <h3>Daftar Kelas Combo</h3>
+          <p>Kelas Mengaji + Fardu Ain dalam satu pilihan kelas.</p>
+          <a class="btn small" href="#form">Daftar Kelas Combo</a>
+        </article>
+
+        <article class="product-card">
+          <span class="product-number">06</span>
+          <h3>Daftar Kelas Custom Ikut Kesesuaian Anda</h3>
+          <p>Corporate class dan sesi private berkumpulan mengikut kesesuaian anda.</p>
+          <a class="btn small" href="#form">Daftar Kelas Custom</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="form" class="section form-section">
+      <div class="section-heading">
+        <p class="eyebrow">Form pendaftaran</p>
+        <h2>Daftar Kelas AQHBAR</h2>
+        <p>Isi detail di bawah. Maklumat ini akan dibuka ke WhatsApp AQHBAR.</p>
+      </div>
+
+      <form id="leadForm" class="lead-form">
+        <label>Nama penuh
+          <input type="text" id="nama" name="nama" required />
+        </label>
+        <label>No telefon
+          <input type="tel" id="telefon" name="telefon" required />
+        </label>
+        <label>Email
+          <input type="email" id="email" name="email" required />
+        </label>
+
+        <label>Tahap bacaan
+          <select id="tahap" name="tahap" required>
+            <option value="">Pilih tahap bacaan</option>
+            <option>Belum boleh baca</option>
+            <option>Pernah</option>
+            <option>Boleh Tapi Tak Lancar</option>
+            <option>Nak Baiki Tajwid & Makhraj Huruf</option>
+            <option>Nak Khatam Bersama ustaz/Ustazah</option>
+          </select>
+        </label>
+
+        <label>Warna kegemaran
+          <select id="warna" name="warna" required>
+            <option value="">Pilih warna</option>
+            <option>Biru</option>
+            <option>Hijau</option>
+            <option>Merah</option>
+            <option>Kuning</option>
+            <option>Putih</option>
+            <option>Hitam</option>
+          </select>
+        </label>
+
+        <label>Pilihan Tutor
+          <select id="tutor" name="tutor" required>
+            <option value="">Pilih tutor</option>
+            <option>Ustaz/Ustazah 1</option>
+            <option>Ustaz/Ustazah 2</option>
+            <option>Ustaz/Ustazah 3</option>
+            <option>Ikut cadangan AQHBAR</option>
+          </select>
+        </label>
+
+        <label>Kelas pilihan
+          <select id="kelas" name="kelas" required>
+            <option value="">Pilih kelas</option>
+            <option>Daftar Kelas Sesi Percuma</option>
+            <option>Daftar Kelas Tadabbur Bulanan</option>
+            <option>Daftar Kelas Mengaji</option>
+            <option>Daftar Kelas Fardu Ain</option>
+            <option>Daftar Kelas Combo</option>
+            <option>Daftar Kelas Custom Ikut Kesesuaian Anda</option>
+          </select>
+        </label>
+
+        <label class="full">Harapan dan cita-cita daftar kelas AQHBAR
+          <textarea id="harapan" name="harapan" rows="5" required></textarea>
+        </label>
+
+        <button class="btn primary full" type="submit">Wasap Sekarang</button>
+        <p class="button-note full">akan diadakan sesi interview khusus untuk tentukan bacaan anda</p>
+      </form>
+    </section>
+
+    <section id="faq" class="section faq-section">
+      <p class="eyebrow">FAQ Section</p>
+      <h2>Soalan lazim</h2>
+      <div class="faq-list">
+        <details>
+          <summary>FAQ 1</summary>
+          <p>Masukkan jawapan FAQ di sini.</p>
+        </details>
+        <details>
+          <summary>FAQ 2</summary>
+          <p>Masukkan jawapan FAQ di sini.</p>
+        </details>
+        <details>
+          <summary>FAQ 3</summary>
+          <p>Masukkan jawapan FAQ di sini.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="section tutor-cta">
+      <h2>Daftar sebagai tutor/pengajar</h2>
+      <p>Untuk ustaz/ustazah yang ingin daftar sebagai tutor atau pengajar AQHBAR.</p>
+      <a class="btn primary" id="tutorButton" href="#">Daftar Sebagai Tutor/Pengajar</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© AQHBAR Academy. Semua hak cipta terpelihara.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

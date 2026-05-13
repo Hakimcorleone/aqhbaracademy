@@ -1,0 +1,155 @@
+:root {
+  --bg: #f7f3ea;
+  --card: #fffaf0;
+  --text: #1d1b16;
+  --muted: #625b4f;
+  --line: #e5dccd;
+  --accent: #1f6f5b;
+  --accent-dark: #174f42;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+a { color: inherit; text-decoration: none; }
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 18px 6vw;
+  background: rgba(247, 243, 234, 0.92);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--line);
+}
+.brand { font-weight: 800; letter-spacing: -0.03em; }
+.brand span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--accent);
+  color: white;
+  margin-right: 8px;
+}
+nav { display: flex; gap: 18px; flex-wrap: wrap; color: var(--muted); font-size: 14px; }
+nav a:hover { color: var(--accent-dark); }
+
+.section { padding: 78px 6vw; }
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(280px, 0.8fr);
+  gap: 34px;
+  align-items: center;
+  min-height: 78vh;
+}
+.eyebrow, .card-kicker {
+  color: var(--accent);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 13px;
+}
+h1, h2, h3 { line-height: 1.08; letter-spacing: -0.04em; margin: 0 0 18px; }
+h1 { font-size: clamp(44px, 7vw, 82px); }
+h2 { font-size: clamp(30px, 4vw, 54px); }
+h3 { font-size: 24px; }
+p { color: var(--muted); margin: 0 0 18px; }
+.hero-copy > p:not(.eyebrow) { font-size: 20px; max-width: 760px; }
+.hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 28px; }
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 14px 22px;
+  font-weight: 800;
+  border: 1px solid var(--accent);
+  cursor: pointer;
+}
+.btn.primary, .btn.small { background: var(--accent); color: white; }
+.btn.secondary { color: var(--accent-dark); background: transparent; }
+.btn.small { padding: 11px 16px; font-size: 14px; margin-top: 10px; }
+.button-note { font-size: 14px; margin-top: 12px; color: var(--muted); }
+.hero-card, .product-card, .speaker-card, .lead-form, .tutor-cta, details {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: 0 20px 60px rgba(29, 27, 22, 0.06);
+}
+.hero-card { padding: 34px; }
+
+.intro { background: #fff8eb; }
+.pill-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.pill-grid span {
+  padding: 12px 16px;
+  border-radius: 999px;
+  background: white;
+  border: 1px solid var(--line);
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.product-grid, .speaker-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 34px;
+}
+.product-card, .speaker-card { padding: 26px; }
+.product-card.highlight { border-color: var(--accent); }
+.product-number { color: var(--accent); font-weight: 900; }
+.free-tag { color: var(--accent-dark); font-weight: 900; }
+ul { padding-left: 20px; color: var(--muted); }
+
+.form-section { background: #fff8eb; }
+.section-heading { max-width: 760px; }
+.lead-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  padding: 28px;
+  margin-top: 30px;
+}
+label { display: grid; gap: 8px; font-weight: 800; color: var(--text); }
+input, select, textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: white;
+  font: inherit;
+}
+.full { grid-column: 1 / -1; }
+
+.faq-list { display: grid; gap: 12px; margin-top: 28px; }
+details { padding: 20px 24px; }
+summary { cursor: pointer; font-weight: 900; }
+summary + p { margin-top: 12px; }
+
+.tutor-cta { text-align: center; padding: 38px; max-width: 900px; margin: 0 auto; }
+.site-footer { padding: 28px 6vw; border-top: 1px solid var(--line); text-align: center; }
+.site-footer p { margin: 0; }
+
+@media (max-width: 900px) {
+  .hero, .product-grid, .speaker-grid, .lead-form { grid-template-columns: 1fr; }
+  .site-header { align-items: flex-start; flex-direction: column; }
+  .section { padding: 56px 5vw; }
+}
